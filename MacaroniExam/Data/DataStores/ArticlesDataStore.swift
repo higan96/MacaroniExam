@@ -10,11 +10,17 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-public class ArticlesDataStore {
+protocol ArticlesDataStore {
+    func articles() -> Observable<ArticlesResponse>
+}
+
+class ArticlesDataStoreImpl: ArticlesDataStore {
+    // 確実に失敗しないのでフォースキャスト
+    // 補足：エンドポイントが複数あるときはenumでの定義を検討すると思う
     private let articlesUrl = URL(string: "https://example.com/articles.json")!
     private let apiClient: APIClent
     
-    public init() {
+    init() {
         apiClient = APIClent(URLSession: URLSession.shared)
     }
     
@@ -26,6 +32,7 @@ public class ArticlesDataStore {
                     if response.result {
                         return response
                     } else {
+                        // response.resultがfalseの場合のサーバーサイドの仕様が不明なため、unknownを定義しthrowしている
                         throw APIError.unknown
                     }
                 }

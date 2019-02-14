@@ -10,14 +10,15 @@ import Foundation
 import RxCocoa
 import RxSwift
 
+// APIとの通信のみを行う
 class APIClent {
     private let URLSession: URLSession
     
-    public init(URLSession: URLSession) {
+    init(URLSession: URLSession) {
         self.URLSession = URLSession
     }
     
-    public func request(url: URL) -> Observable<Data> {
+    func request(url: URL) -> Observable<Data> {
         let request = URLRequest(url: url)
         return URLSession.rx.response(request: request)
             .map { pair -> Data in

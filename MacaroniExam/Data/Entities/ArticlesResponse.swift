@@ -8,9 +8,11 @@
 
 import Foundation
 
+// リクエストのレスポンスオブジェクト
 struct ArticlesResponse: Decodable {
     let result: Bool
     let data: [ArticleResponseItem]
+    
     enum CodingKeys: String, CodingKey {
         case result
         case data
@@ -21,11 +23,4 @@ struct ArticlesResponse: Decodable {
         result = try container.decode(Bool.self, forKey: .result)
         data = try container.decode([ArticleResponseItem].self, forKey: .data)
     }
-    
-    private init() {
-        result = true
-        data = []
-    }
-    
-    static let empty = ArticlesResponse()
 }

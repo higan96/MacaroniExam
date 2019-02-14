@@ -20,8 +20,8 @@ class ArticlesRepositoryTests: XCTestCase {
     }
     
     func testCovertArticles() {
-        let dataStore = ArticlesDataStore(URLSession: URLSession.shared)
-        let repository = ArticlesRepository(dataStore: dataStore)
+        let dataStore = ArticlesDataStoreImpl()
+        let repository = ArticlesRepositoryImpl(dataStore: dataStore)
         
         do {
             let articles = try repository.articles().toBlocking().first()!

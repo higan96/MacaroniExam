@@ -8,6 +8,9 @@
 
 import Foundation
 
+// 混乱の低減のため、直接NormalArticleやMovieArticleにデコードするより、すべてのタイプ（typeカラム）に対応するArticleEntityをまず作る。
+// その後、NormalArticleやMovieArticleのinitの引数にArticleEntityを渡す形でオブジェクトを作る設計にした
+
 struct ArticleEntity: Decodable {
     let id: String
     let title: String
@@ -23,7 +26,7 @@ struct ArticleEntity: Decodable {
         case iconURLString = "icon"
     }
     
-    public init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)

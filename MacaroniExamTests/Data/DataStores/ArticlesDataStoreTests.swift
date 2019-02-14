@@ -14,15 +14,13 @@ import RxBlocking
 class ArticlesDataStoreTests: XCTestCase {
 
     override func setUp() {
-        
     }
 
     override func tearDown() {
-        
     }
     
     func testFetchingArticles() {
-        let dataStore = ArticlesDataStore(URLSession: URLSession.shared)
+        let dataStore = ArticlesDataStoreImpl()
         do {
             let response = try dataStore.articles().toBlocking().first()!
             XCTAssertTrue(response.result)

@@ -8,6 +8,8 @@
 
 import Foundation
 
+// typeとarticleが同階層のため、このクラスを作成した
+// サーバーサイドのDBのデータ構造とjsonのデータ構造が同一だと考えたので、このような形が混乱が少なくなると思う。
 struct ArticleResponseItem: Decodable {
     let type: String
     let articleEntity: ArticleEntity
@@ -17,7 +19,7 @@ struct ArticleResponseItem: Decodable {
         case articleEntity = "article"
     }
     
-    public init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         type = try container.decode(String.self, forKey: .type)
         articleEntity = try container.decode(ArticleEntity.self, forKey: .articleEntity)
