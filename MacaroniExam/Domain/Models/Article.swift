@@ -10,6 +10,7 @@ import Foundation
 
 protocol Article {
     var id: String { get }
+    var type: ArticleType { get }
 }
 
 enum ArticleType: String {
@@ -18,6 +19,7 @@ enum ArticleType: String {
 
 struct MovieArticle: Article{
     let id: String
+    let type = ArticleType.movie
     let movieCookName: String
     let squareIconURL: URL?
     
@@ -30,6 +32,7 @@ struct MovieArticle: Article{
 
 struct NormalArticle: Article{
     let id: String
+    let type = ArticleType.normal
     let title: String
     let iconURL: URL?
     
