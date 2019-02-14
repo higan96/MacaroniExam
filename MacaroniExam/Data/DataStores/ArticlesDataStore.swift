@@ -12,19 +12,22 @@ import RxCocoa
 
 public class ArticlesDataStore {
     private let articlesUrl = URL(string: "https://example.com/articles.json")!
-    private let URLSession: URLSession
+    private let apiClient: APIClent
     
-    public init(URLSession: URLSession) {
-        self.URLSession = URLSession
+    public init() {
+        apiClient = APIClent(URLSession: URLSession.shared)
     }
     
     func articles() -> Observable<ArticlesResponse> {
-        let request = URLRequest(url: articlesUrl)
-        return URLSession.rx.response(request: request)
-            .map { pair in
+        return apiClient.request(url: articlesUrl)
+            .map { data -> ArticlesResponse in
                 do {
-                    let response = try JSONDecoder().decode(ArticlesResponse.self, from: pair.data)
-                    return response
+                    let response = try JSONDecoder().decode(ArticlesResponse.self, from: data)
+                    if response.result {
+                        return response
+                    } else {
+                        throw APIError.unknown
+                    }
                 }
                 catch {
                     throw error

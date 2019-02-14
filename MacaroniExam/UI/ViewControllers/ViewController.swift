@@ -16,13 +16,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dataStore = ArticlesDataStore(URLSession: URLSession.shared)
+        
+        let dataStore = ArticlesDataStore()
         let repository = ArticlesRepository(dataStore: dataStore)
+        let viewModel = ArticlesViewModel(repository: repository)
         
         tableView.register(cellType: MovieArticleCell.self)
         tableView.register(cellType: NormalArticleCell.self)
 
-        repository.articles()
+        viewModel.articles
             .bind(to: tableView.rx.items) { tableView, row, article in
                 let indexPath = IndexPath(row: row, section: 0)
                 switch article.type {
@@ -36,6 +38,12 @@ class ViewController: UIViewController {
                     return cell
                 }
             }
+            .disposed(by: bag)
+        
+        viewModel.error
+            .subscribe(onNext: { error in
+                print(error.localizedDescription)
+            })
             .disposed(by: bag)
     }
 }

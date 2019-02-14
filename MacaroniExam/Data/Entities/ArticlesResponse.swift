@@ -16,9 +16,16 @@ struct ArticlesResponse: Decodable {
         case data
     }
     
-    public init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         result = try container.decode(Bool.self, forKey: .result)
         data = try container.decode([ArticleResponseItem].self, forKey: .data)
     }
+    
+    private init() {
+        result = true
+        data = []
+    }
+    
+    static let empty = ArticlesResponse()
 }
