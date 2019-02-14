@@ -10,21 +10,32 @@ import Foundation
 
 protocol Article {
     var id: String { get }
-    var thumbnailURL: URL? { get }
 }
 
 enum ArticleType: String {
     case normal, movie = "movies"
 }
 
-struct MovieArticle: Article, Decodable {
+struct MovieArticle: Article{
     let id: String
     let movieCookName: String
-    var thumbnailURL: URL?
+    let squareIconURL: URL?
+    
+    init(entity: ArticleEntity) {
+        id = entity.id
+        movieCookName = entity.movieCookName
+        squareIconURL = URL(string: entity.squareIconURLString)
+    }
 }
 
-struct NormalArticle: Article, Decodable {
+struct NormalArticle: Article{
     let id: String
     let title: String
-    var thumbnailURL: URL?
+    let iconURL: URL?
+    
+    init(entity: ArticleEntity) {
+        id = entity.id
+        title = entity.title
+        iconURL = URL(string: entity.iconURLString)
+    }
 }
