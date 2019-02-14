@@ -1,0 +1,6 @@
+framework module Pods_MacaroniExamTests {
+  umbrella header "Pods-MacaroniExamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

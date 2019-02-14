@@ -13,6 +13,8 @@
 		366C0BD82215305F001F21BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366C0BD72215305F001F21BD /* Assets.xcassets */; };
 		366C0BDB2215305F001F21BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366C0BD92215305F001F21BD /* LaunchScreen.storyboard */; };
 		366C0BE622153060001F21BD /* MacaroniExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C0BE522153060001F21BD /* MacaroniExamTests.swift */; };
+		B8120754DA4ED640C162BB9F /* Pods_MacaroniExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B4A79C96C3FFDA47B64114 /* Pods_MacaroniExam.framework */; };
+		D094C678F5B2399D9D07A8EC /* Pods_MacaroniExamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0AF1B5F22F8BA725FCC0FB /* Pods_MacaroniExamTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0AF1B5F22F8BA725FCC0FB /* Pods_MacaroniExamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacaroniExamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A1284E82A042919238B032 /* Pods-MacaroniExamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExamTests.release.xcconfig"; path = "Target Support Files/Pods-MacaroniExamTests/Pods-MacaroniExamTests.release.xcconfig"; sourceTree = "<group>"; };
 		366C0BCD2215305F001F21BD /* MacaroniExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacaroniExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C0BD02215305F001F21BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366C0BD22215305F001F21BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		366C0BE122153060001F21BD /* MacaroniExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacaroniExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C0BE522153060001F21BD /* MacaroniExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacaroniExamTests.swift; sourceTree = "<group>"; };
 		366C0BE722153060001F21BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA9CD74E7260853D5F5B124 /* Pods-MacaroniExamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExamTests.debug.xcconfig"; path = "Target Support Files/Pods-MacaroniExamTests/Pods-MacaroniExamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8B4A79C96C3FFDA47B64114 /* Pods_MacaroniExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacaroniExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7794B1773BB3DFCC462406 /* Pods-MacaroniExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExam.release.xcconfig"; path = "Target Support Files/Pods-MacaroniExam/Pods-MacaroniExam.release.xcconfig"; sourceTree = "<group>"; };
+		D4189E1B91E233C2DBC7D50B /* Pods-MacaroniExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExam.debug.xcconfig"; path = "Target Support Files/Pods-MacaroniExam/Pods-MacaroniExam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8120754DA4ED640C162BB9F /* Pods_MacaroniExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D094C678F5B2399D9D07A8EC /* Pods_MacaroniExamTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				366C0BCF2215305F001F21BD /* MacaroniExam */,
 				366C0BE422153060001F21BD /* MacaroniExamTests */,
 				366C0BCE2215305F001F21BD /* Products */,
+				A1498DFA9E4D71CAB59694E7 /* Pods */,
+				E977A1F2CE83CAA438AC2A25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,27 @@
 			path = MacaroniExamTests;
 			sourceTree = "<group>";
 		};
+		A1498DFA9E4D71CAB59694E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4189E1B91E233C2DBC7D50B /* Pods-MacaroniExam.debug.xcconfig */,
+				CD7794B1773BB3DFCC462406 /* Pods-MacaroniExam.release.xcconfig */,
+				AAA9CD74E7260853D5F5B124 /* Pods-MacaroniExamTests.debug.xcconfig */,
+				31A1284E82A042919238B032 /* Pods-MacaroniExamTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E977A1F2CE83CAA438AC2A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4A79C96C3FFDA47B64114 /* Pods_MacaroniExam.framework */,
+				2E0AF1B5F22F8BA725FCC0FB /* Pods_MacaroniExamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 366C0BEA22153060001F21BD /* Build configuration list for PBXNativeTarget "MacaroniExam" */;
 			buildPhases = (
+				1C0E6A441B7DA4928905154D /* [CP] Check Pods Manifest.lock */,
 				366C0BC92215305F001F21BD /* Sources */,
 				366C0BCA2215305F001F21BD /* Frameworks */,
 				366C0BCB2215305F001F21BD /* Resources */,
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 366C0BED22153060001F21BD /* Build configuration list for PBXNativeTarget "MacaroniExamTests" */;
 			buildPhases = (
+				D05114F4219B07B6A92956DE /* [CP] Check Pods Manifest.lock */,
 				366C0BDD22153060001F21BD /* Sources */,
 				366C0BDE22153060001F21BD /* Frameworks */,
 				366C0BDF22153060001F21BD /* Resources */,
@@ -191,6 +226,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C0E6A441B7DA4928905154D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacaroniExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D05114F4219B07B6A92956DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacaroniExamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		366C0BC92215305F001F21BD /* Sources */ = {
@@ -358,6 +440,7 @@
 		};
 		366C0BEB22153060001F21BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4189E1B91E233C2DBC7D50B /* Pods-MacaroniExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +459,7 @@
 		};
 		366C0BEC22153060001F21BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7794B1773BB3DFCC462406 /* Pods-MacaroniExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +478,7 @@
 		};
 		366C0BEE22153060001F21BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA9CD74E7260853D5F5B124 /* Pods-MacaroniExamTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +500,7 @@
 		};
 		366C0BEF22153060001F21BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A1284E82A042919238B032 /* Pods-MacaroniExamTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
