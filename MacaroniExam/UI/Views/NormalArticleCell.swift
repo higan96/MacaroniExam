@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class NormalArticleCell: UITableViewCell {
     @IBOutlet private weak var iconImageView: UIImageView!
@@ -14,5 +15,6 @@ class NormalArticleCell: UITableViewCell {
     
     func configure(with article: NormalArticle ) {
         titleLabel.text = article.title
+        iconImageView.sd_setImage(with: article.iconURL)
     }
 }

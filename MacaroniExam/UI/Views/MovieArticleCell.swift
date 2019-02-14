@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MovieArticleCell: UITableViewCell {
     @IBOutlet private weak var iconImageView: UIImageView!
@@ -14,5 +15,6 @@ class MovieArticleCell: UITableViewCell {
     
     func configure(with article: MovieArticle ) {
         titleLabel.text = article.movieCookName
+        iconImageView.sd_setImage(with: article.squareIconURL)
     }
 }
