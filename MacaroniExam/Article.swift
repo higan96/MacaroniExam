@@ -10,16 +10,21 @@ import Foundation
 
 protocol Article {
     var id: String { get }
+    var thumbnailURL: URL? { get }
+}
+
+enum ArticleType: String {
+    case normal, movie = "movies"
 }
 
 struct MovieArticle: Article, Decodable {
     let id: String
     let movieCookName: String
-    let squareIconUrl: URL
+    var thumbnailURL: URL?
 }
 
 struct NormalArticle: Article, Decodable {
     let id: String
     let title: String
-    let iconUrl: URL
+    var thumbnailURL: URL?
 }
