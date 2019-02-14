@@ -13,6 +13,7 @@
 		366C0BD82215305F001F21BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366C0BD72215305F001F21BD /* Assets.xcassets */; };
 		366C0BDB2215305F001F21BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366C0BD92215305F001F21BD /* LaunchScreen.storyboard */; };
 		366C0BE622153060001F21BD /* MacaroniExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C0BE522153060001F21BD /* MacaroniExamTests.swift */; };
+		366C0BF122153251001F21BD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C0BF022153251001F21BD /* Article.swift */; };
 		B8120754DA4ED640C162BB9F /* Pods_MacaroniExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B4A79C96C3FFDA47B64114 /* Pods_MacaroniExam.framework */; };
 		D094C678F5B2399D9D07A8EC /* Pods_MacaroniExamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0AF1B5F22F8BA725FCC0FB /* Pods_MacaroniExamTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		366C0BE122153060001F21BD /* MacaroniExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacaroniExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C0BE522153060001F21BD /* MacaroniExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacaroniExamTests.swift; sourceTree = "<group>"; };
 		366C0BE722153060001F21BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366C0BF022153251001F21BD /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		AAA9CD74E7260853D5F5B124 /* Pods-MacaroniExamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExamTests.debug.xcconfig"; path = "Target Support Files/Pods-MacaroniExamTests/Pods-MacaroniExamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8B4A79C96C3FFDA47B64114 /* Pods_MacaroniExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacaroniExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7794B1773BB3DFCC462406 /* Pods-MacaroniExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExam.release.xcconfig"; path = "Target Support Files/Pods-MacaroniExam/Pods-MacaroniExam.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		366C0BCF2215305F001F21BD /* MacaroniExam */ = {
 			isa = PBXGroup;
 			children = (
+				366C0BF022153251001F21BD /* Article.swift */,
 				366C0BD02215305F001F21BD /* AppDelegate.swift */,
 				366C0BD22215305F001F21BD /* ViewController.swift */,
 				366C0BD42215305F001F21BD /* Main.storyboard */,
@@ -280,6 +283,7 @@
 			files = (
 				366C0BD32215305F001F21BD /* ViewController.swift in Sources */,
 				366C0BD12215305F001F21BD /* AppDelegate.swift in Sources */,
+				366C0BF122153251001F21BD /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
