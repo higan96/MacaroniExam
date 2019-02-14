@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class ViewController: UIViewController {
+class ArticlesViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     private let bag = DisposeBag()
