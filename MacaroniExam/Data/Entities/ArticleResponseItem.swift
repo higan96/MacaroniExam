@@ -10,6 +10,9 @@ import Foundation
 
 // typeとarticleが同階層のため、このクラスを作成した
 // サーバーサイドのDBのデータ構造とjsonのデータ構造が同一だと考えたので、このような形が混乱が少なくなると思う。
+// というか、データ構造に混乱を感じるのでDataレイヤーに閉じ込める目的もある。
+// 名前はちょっと微妙。DBのテーブル名と合わせたいところ。
+
 struct ArticleResponseItem: Decodable {
     let type: String
     let articleEntity: ArticleEntity

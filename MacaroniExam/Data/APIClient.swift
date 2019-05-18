@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 
 // APIとの通信のみを行う
-class APIClent {
+class APIClient {
     private let URLSession: URLSession
     
     init(URLSession: URLSession) {
@@ -19,6 +19,10 @@ class APIClent {
     }
     
     func request(url: URL) -> Observable<Data> {
+        if url.isFileURL {
+            let data = try! Data(contentsOf: url)
+            return Observable.just(data)
+        }
         let request = URLRequest(url: url)
         return URLSession.rx.response(request: request)
             .map { pair -> Data in

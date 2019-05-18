@@ -14,23 +14,23 @@ protocol Article {
 }
 
 enum ArticleType: String {
-    case normal, movie = "movies"
+    case normal, movie
 }
 
-struct MovieArticle: Article{
+struct MovieArticle: Article {
     let id: String
     let type = ArticleType.movie
-    let movieCookName: String
+    let movieTitle: String
     let squareIconURL: URL?
     
     init(entity: ArticleEntity) {
         id = entity.id
-        movieCookName = entity.movieCookName
+        movieTitle = entity.movieTitle
         squareIconURL = URL(string: entity.squareIconURLString)
     }
 }
 
-struct NormalArticle: Article{
+struct NormalArticle: Article {
     let id: String
     let type = ArticleType.normal
     let title: String

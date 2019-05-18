@@ -9,5 +9,5 @@
 import Foundation
 
 enum APIError: Error {
-    case unknown
+    case unknown, noSuchFile
 }

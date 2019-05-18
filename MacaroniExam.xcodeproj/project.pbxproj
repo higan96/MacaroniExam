@@ -29,6 +29,7 @@
 		366C0C292215705D001F21BD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C0C282215705D001F21BD /* APIClient.swift */; };
 		366C0C2C2215735D001F21BD /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C0C2B2215735D001F21BD /* ArticlesViewModel.swift */; };
 		366C0C2E221576C9001F21BD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366C0C2D221576C9001F21BD /* APIError.swift */; };
+		366C0C34221A9943001F21BD /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 366C0C33221A9943001F21BD /* mock.json */; };
 		833C44B602461BC566CE65D6 /* Pods_MacaroniExamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6DB7F720D6E320D820205D /* Pods_MacaroniExamTests.framework */; };
 		B6C5277B63D629A0B8FF8E2E /* Pods_MacaroniExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE947FA86E51D70C94D847F /* Pods_MacaroniExam.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		366C0C282215705D001F21BD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		366C0C2B2215735D001F21BD /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		366C0C2D221576C9001F21BD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		366C0C33221A9943001F21BD /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
 		3800FDA9348B14C29E103511 /* Pods-MacaroniExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExam.release.xcconfig"; path = "Target Support Files/Pods-MacaroniExam/Pods-MacaroniExam.release.xcconfig"; sourceTree = "<group>"; };
 		5A6DB7F720D6E320D820205D /* Pods_MacaroniExamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacaroniExamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E9EBF2A2619609B951A0CF /* Pods-MacaroniExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacaroniExam.debug.xcconfig"; path = "Target Support Files/Pods-MacaroniExam/Pods-MacaroniExam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,15 +123,16 @@
 		366C0BCF2215305F001F21BD /* MacaroniExam */ = {
 			isa = PBXGroup;
 			children = (
-				366C0C2122155783001F21BD /* Extensions */,
-				366C0C1622155615001F21BD /* UI */,
-				366C0C0D22154ABC001F21BD /* Domain */,
-				366C0BFA221543C2001F21BD /* Data */,
-				366C0BD02215305F001F21BD /* AppDelegate.swift */,
-				366C0BD42215305F001F21BD /* Main.storyboard */,
-				366C0BD72215305F001F21BD /* Assets.xcassets */,
-				366C0BD92215305F001F21BD /* LaunchScreen.storyboard */,
+				366C0C33221A9943001F21BD /* mock.json */,
 				366C0BDC22153060001F21BD /* Info.plist */,
+				366C0BD02215305F001F21BD /* AppDelegate.swift */,
+				366C0BD72215305F001F21BD /* Assets.xcassets */,
+				366C0BFA221543C2001F21BD /* Data */,
+				366C0C0D22154ABC001F21BD /* Domain */,
+				366C0C2122155783001F21BD /* Extensions */,
+				366C0BD92215305F001F21BD /* LaunchScreen.storyboard */,
+				366C0BD42215305F001F21BD /* Main.storyboard */,
+				366C0C1622155615001F21BD /* UI */,
 			);
 			path = MacaroniExam;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				366C0BD62215305F001F21BD /* Main.storyboard in Resources */,
 				366C0C1C2215564D001F21BD /* NormalArticleCell.xib in Resources */,
 				366C0C2022155660001F21BD /* MovieArticleCell.xib in Resources */,
+				366C0C34221A9943001F21BD /* mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

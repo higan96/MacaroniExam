@@ -1,0 +1,69 @@
+{
+  "result": true,
+  "data": [
+    {
+      "type": "movie",
+      "article": {
+        "id": "27492",
+        "title": "",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+        "movie_title": "MOVIE_TITLE"
+      }
+    },
+    {
+      "type": "normal",
+      "article": {
+        "id": "49080",
+        "title": "TITLE",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+      },
+    },
+    {
+      "type": "normal",
+      "article": {
+        "id": "49081",
+        "title": "TITLE",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+      },
+    },
+    {
+      "type": "normal",
+      "article": {
+        "id": "49082",
+        "title": "TITLE",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+      },
+    },
+    {
+      "type": "normal",
+      "article": {
+        "id": "49083",
+        "title": "TITLE",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+      },
+    },
+    {
+      "type": "normal",
+      "article": {
+        "id": "49084",
+        "title": "TITLE",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+      },
+    },
+	{
+      "type": "normal",
+      "article": {
+        "id": "49085",
+        "title": "TITLE",
+        "icon_url": "https://placehold.jp/400x300.png",
+        "square_icon_url": "https://placehold.jp/24/cc9999/993333/400x400.png",
+      },
+    },
+  ]
+}

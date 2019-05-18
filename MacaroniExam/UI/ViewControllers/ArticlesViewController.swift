@@ -34,15 +34,13 @@ class ArticlesViewController: UIViewController {
                 switch article.type {
                 case .normal:
                     let cell = tableView.dequeueReusableCell(with: NormalArticleCell.self, for: indexPath)
-                    // 確実に失敗しないのでフォースキャスト
                     cell.configure(with: article as! NormalArticle)
                     return cell
                 case .movie:
                     let cell = tableView.dequeueReusableCell(with: MovieArticleCell.self, for: indexPath)
-                    // 確実に失敗しないのでフォースキャスト
                     cell.configure(with: article as! MovieArticle)
                     return cell
-                }
+                } 
             }
             .disposed(by: bag)
         

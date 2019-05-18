@@ -14,7 +14,7 @@ class MovieArticleCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     
     func configure(with article: MovieArticle ) {
-        titleLabel.text = article.movieCookName
+        titleLabel.text = article.movieTitle
         iconImageView.sd_setImage(with: article.squareIconURL)
     }
 }
